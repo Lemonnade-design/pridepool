@@ -10,7 +10,7 @@ Editable source for the campaign page at https://pridepool-v1.vercel.app, plus a
 
 All versions are kept side by side for comparison; nothing is deleted between iterations.
 
-Live prototype: https://kirtanyak-pe.github.io/pridepool/
+Live prototype: https://lemonnade-design.github.io/pridepool/
 
 ## Run it
 
@@ -18,7 +18,7 @@ Live prototype: https://kirtanyak-pe.github.io/pridepool/
 npm install
 npm run dev        # http://localhost:5173 (or the port shown)
 npm run build      # production build → dist/
-npm run deploy     # publish to https://kirtanyak-pe.github.io/pridepool/
+npm run deploy     # publish to https://lemonnade-design.github.io/pridepool/
 ```
 
 After `npm run deploy`, the live link updates in about a minute.

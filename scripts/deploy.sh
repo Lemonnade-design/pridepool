@@ -1,6 +1,6 @@
 #!/bin/sh
 # Build the site and publish it to GitHub Pages (gh-pages branch).
-# Live at https://kirtanyak-pe.github.io/pridepool/ about a minute after it runs.
+# Live at https://lemonnade-design.github.io/pridepool/ about a minute after it runs.
 set -e
 cd "$(dirname "$0")/.."
 
@@ -27,4 +27,4 @@ git add -A
 git -c user.name="$NAME" -c user.email="$EMAIL" commit -qm "Deploy $(date '+%Y-%m-%d %H:%M')"
 git push -f "$(git -C .. remote get-url origin)" gh-pages
 rm -rf .git
-echo "Deployed → https://kirtanyak-pe.github.io/pridepool/"
+echo "Deployed → https://lemonnade-design.github.io/pridepool/"
