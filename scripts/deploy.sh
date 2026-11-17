@@ -25,6 +25,7 @@ rm -rf .git
 git init -q -b gh-pages
 git add -A
 git -c user.name="$NAME" -c user.email="$EMAIL" commit -qm "Deploy $(date '+%Y-%m-%d %H:%M')"
-git push -f "$(git -C .. remote get-url origin)" gh-pages
+# Every push URL of origin: the org repo and the old personal one (its link was shared before the move).
+for url in $(git -C .. remote get-url --push --all origin); do git push -f "$url" gh-pages; done
 rm -rf .git
-echo "Deployed → https://lemonnade-design.github.io/pridepool/"
+echo "Deployed → https://lemonnade-design.github.io/pridepool/ (and the old https://kirtanyak-pe.github.io/pridepool/)"
